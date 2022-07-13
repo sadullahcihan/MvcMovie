@@ -1,6 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+//using MvcMovie.Data;
+using MvcMovie.Models;
+
+
 var builder = WebApplication.CreateBuilder(args);
+
+
 //changed 
 if (builder.Environment.IsDevelopment()) //shows how to use SQLite in development and SQL Server in production.
 {
@@ -15,8 +21,13 @@ else
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-var app = builder.Build();
+var app = builder.Build(); //ok
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
 
+    SeedData.Initialize(services);
+}
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -37,3 +48,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+

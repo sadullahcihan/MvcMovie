@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DpywEOBzt6wlsDuULPJ6BczHPWJk0LLw6FO1R4SRY0I=",
+  "Hash": "eRWbTPMAS2wfSgnLFfmkOaVFoN6klbhFrxtnjgUjP8s=",
   "Source": "MvcMovie",
   "BasePath": "_content/MvcMovie",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Sadullah\\MvcMovie\\wwwroot\\MvcMovie.db",
+      "SourceId": "MvcMovie",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sadullah\\MvcMovie\\wwwroot\\",
+      "BasePath": "_content/MvcMovie",
+      "RelativePath": "MvcMovie.db",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\MvcMovie.db"
     }
   ]
 }
